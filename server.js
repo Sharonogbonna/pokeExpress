@@ -13,7 +13,11 @@ app.get('/', (req, res) => {
 app.get('/pokemon', (req, res) => {
     res.render('Index', {allPokemon: pokemon})
 })
-
+app.get('/pokemon/:indexOfPokemonArray', function(req, res){
+    res.render('Show', { //second param must be an object
+        chosenPokemon: pokemon[req.params.indexOfPokemonArray]
+    })
+})
 
 
 
