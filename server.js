@@ -3,10 +3,10 @@ const app = express();
 const port = 3000;
 const pokemon = require('./models/pokemon.js')
 
-
+app.use(express.static('public'))
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
-app.use(express.static('public'))
+
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Pokemon App!');
