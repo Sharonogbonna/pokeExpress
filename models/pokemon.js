@@ -5,7 +5,9 @@ const pokemon = [
     {name: "charmander", img: "http://img.pokemondb.net/artwork/charmander"},
     {name: "charizard", img: "http://img.pokemondb.net/artwork/charizard"},
     {name: "squirtle", img: "http://img.pokemondb.net/artwork/squirtle"},
-    {name: "wartortle", img: "http://img.pokemondb.net/artwork/wartortle"}
+    {name: "wartortle", img: "http://img.pokemondb.net/artwork/wartortle"},
+    {name: "pikachu", img: "http://img.pokemondb.net/artwork/pikachu"}
+
  ];
 
 module.exports = pokemon
