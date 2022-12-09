@@ -10,8 +10,8 @@ class Index extends React.Component {
     return (
       <div>
         <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-         <a href={`/pokemon/new`}>Catch a New Pokemon</a>
       <h1>Pokedex</h1>
+      <a href={`/pokemon/new`}>Catch a New Pokemon</a>
       <ul>
           {pokemon.map((pokemon, i) => {
             return (

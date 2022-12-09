@@ -11,9 +11,9 @@ class Show extends React.Component {
          <link rel="stylesheet" type="text/css" href="../css/style.css"/>
          <h1>Gotta Catch 'Em All</h1>
          <h2>{clickedPokemon.name.toUpperCase()}</h2>
-         <img src={'http://img.pokemondb.net/artwork/' + clickedPokemon.name + '.jpg'} alt="picture of pokemon" />
+         <img src={'http://img.pokemondb.net/artwork/' + clickedPokemon.name.toLowerCase() + '.jpg'} alt="picture of pokemon" />
          <br />
-         <a href="/pokemon">back</a>
+         <a href="/pokemon">Back to Pokedex</a> |  <a href={`/pokemon/new`}>Catch New Pokemon</a>
         </div>
         
        )

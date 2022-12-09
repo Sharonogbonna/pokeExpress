@@ -13,6 +13,8 @@ class New extends React.Component {
               <br />
               <input type="submit" name="" value="Catch This Pokemon"/>
             </form>
+            <br />
+            <a href={`/pokemon`}>Back to Pokedex</a>
         </div>);
     }
   }
