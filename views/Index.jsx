@@ -5,16 +5,18 @@ const React = require('react')
 //  };
 class Index extends React.Component {
    render () {
-   const { allPokemon } = this.props
+   const { pokemon } = this.props
+   console.log(this.props)
     return (
       <div>
-      <link rel="stylesheet" type="text/css" href="css/style.css"/>
-      <h1> See All The Pokemon </h1>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+         <a href={`/pokemon/new`}>Catch a New Pokemon</a>
+      <h1>Pokedex</h1>
       <ul>
-          {allPokemon.map((pokemon, i) => {
+          {pokemon.map((pokemon, i) => {
             return (
               <li>
-               <a href={`/pokemon/${i}`}>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</a> 
+               <a href={`/pokemon/${pokemon.id}`}>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</a> 
               </li>
             );
           })}
