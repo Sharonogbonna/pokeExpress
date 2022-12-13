@@ -13,6 +13,10 @@ h1{
     color: white;
     font-size: 50px;
 }
+h2{
+    text-align: center;
+    font-size: 40px;
+}
 li{
     background-color: rgb(128,106,93);
     display: flex;
@@ -22,4 +26,8 @@ li{
     padding: 20px;
     margin: 15px;
     font-size: 1.5em;
+}
+img{
+    display: block;
+    margin: auto;
 }
